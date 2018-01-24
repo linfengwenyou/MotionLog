@@ -34,3 +34,17 @@
 
 
 
+#### 使用AFN操作时如果需要拦截json数据
+
+```
+// 请求日志
+// AFHTTPSessionManager.m 162行 NSLog(@"\n\nRequest:\t%@\nparam:\n%@\n*******************\n",URLString, parameters);
+ 
+ 
+// 响应日志
+// AFURLSessionManager.m 291行
+NSLog(@"\n\nResponse:\n%@\n*******************\n",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+```
+
+
+
